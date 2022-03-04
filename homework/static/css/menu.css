@@ -1,0 +1,29 @@
+*{
+font-family: Arial, sans-serif;
+}
+
+
+.menu-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #305A72;
+
+}
+.menu-style li {
+  float: left;
+
+}
+.menu-style li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+menu-style:hover {
+  background-color: #111;
+}
+

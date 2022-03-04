@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/create_film.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css'%}">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" class="form-style-9">{% csrf_token %}
+    <ul>
+        <li>
+            {{user.username.label_tag}}
+            {{user.username}}
+            {{user.username.errors}}
+        </li>
+        <li>
+            {{user.first_name.label_tag}}
+            {{user.first_name}}
+        </li>
+        <li>
+            {{user.last_name.label_tag}}
+             {{user.last_name}}
+        </li>
+        <li>
+             {{user.email.label_tag}}
+            {{user.email}}
+            {{user.email.errors}}
+        </li>
+        <li>
+            {{user.phone.label_tag}}
+            {{user.phone}}
+            {{user.phone.errors}}
+        </li>
+        <li>
+            {{user.is_active.label_tag}}
+            {{user.is_active}}
+        </li>
+        <li>
+           {{user.date_joined.label_tag}}
+           {{user.date_joined}}
+        </li>
+        <li>
+            <button type="submit" class="field-style">Save</button>
+
+        </li>
+
+       </ul>
+</form>
+
+</body>
+</html>
